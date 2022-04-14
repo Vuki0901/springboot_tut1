@@ -73,4 +73,8 @@ public class StudentService {
             student.setEmail(email);
         }
     }
+
+    public Optional<Student> getStudentById(Long studentId) {
+        return studentRepository.findById(studentId);
+    }
 }
